@@ -1,0 +1,82 @@
+.screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 303px;
+    gap: 30px;
+}
+
+.img-logo {
+    width: 303px;
+    height: 43px;
+    background-image: url("../img/Group\ 178.png");
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-login .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-login .field input {
+    width: 303px;
+    height: 60px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-login .field input[type='password'] {
+    letter-spacing: 6px;
+}
+
+.form-login .field label {
+    position: absolute;
+    color: #555555;
+    left: 15px;
+    transform-origin: 0%;
+    transition: all 0.4s;
+    pointer-events: none;
+}
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+    transform: translateY(-18px) scale(0.9);
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    background-color: #03495C;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+a {
+    font-weight: 600;
+    transition: all 0.4s;
+}
+
+button:active,
+a:active {
+    transform: scale(0.9);
+}
